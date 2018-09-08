@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: user-consumer
+
+instance:
+      instance-id: user-consumer8080
+      prefer-ip-address: true     #访问路径可以显示IP地址

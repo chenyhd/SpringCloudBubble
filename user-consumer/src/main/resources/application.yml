@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+
+# feign配置
+#feign:
+#  hystrix:
+#
+#    enabled: true
+
+
+
+eureka:
+  client:
+    service-url:
+          defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com/eureka:7002,http://eureka7003.com:7003/eureka
+     #egister-with-eureka: false # false 不把自己注册到eureak服务中

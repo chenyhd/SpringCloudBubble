@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: rabbitmq
+  rabbitmq:
+    host: chenyh.com
+    port: 5672
+    username: msg
+    password: msg
+    listener:
+      simple:
+        acknowledge-mode: MANUAL
+    publisher-confirms: true
+    publisher-returns: true
