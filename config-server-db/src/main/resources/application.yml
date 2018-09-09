@@ -1,0 +1,24 @@
+server:
+  port: 9103
+spring:
+  application:
+    name: config-server-db
+  profiles:
+    active: jdbc
+  #数据库配置
+  datasource:
+    url: jdbc:mysql://localhost:3306/config?useUnicode=true&characterEncoding=UTF-8
+    username: username
+    password: password
+    driver-class-name: com.mysql.jdbc.Driver
+  cloud:
+    config:
+      server:
+        default-label: master
+        prefix: config
+        jdbc:
+          sql: SELECT `KEY`, `VALUE` from PROPERTIES where APPLICATION=? and PROFILE=? and LABEL=?
+
+logging:
+  level:
+    root: debug
