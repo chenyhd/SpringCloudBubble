@@ -23,4 +23,19 @@ public class ConfigServerConfig {
         return new TvuJdbcEnvironmentRepository(tvuConfigMapper);
     }
 
+    @Bean
+    @Profile("jdbc")
+    @ConditionalOnClass(JdbcTemplate.class)
+    public Object object(){
+        System.out.println(profile);
+        return  null;
+    }
+
+    @Bean
+    @Profile("jdbc")
+    public Object object1(){
+        System.out.println(profile);
+        return  null;
+    }
+
 }
