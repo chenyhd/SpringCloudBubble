@@ -1,11 +1,8 @@
 package com.chenyh.configserverdb.config;
 
-import ch.qos.logback.classic.Logger;
 import com.chenyh.configserverdb.mapper.TvuConfigMapper;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
-import org.springframework.cloud.config.server.environment.JdbcEnvironmentRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;

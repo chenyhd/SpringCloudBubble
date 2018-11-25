@@ -1,7 +1,7 @@
 package com.chenyh.consumer.controller;
 
-import com.chenyh.entity.User;
 import com.chenyh.consumer.service.UserClientService;
+import com.chenyh.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
