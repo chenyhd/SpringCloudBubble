@@ -1,4 +1,4 @@
-package com.chenyh.service.config;
+package com.chenyh.configserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
