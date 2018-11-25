@@ -3,10 +3,11 @@ spring:
     name: eureka-server
   cloud:
     config:
-      uri: http://config-center.com:3344
-      name: eureka-server01
-      label: master
-      fail-fast: true
+      enabled: false
+#      uri: http://config-center.com:3344
+#      name: eureka-server01
+#      label: master
+#      fail-fast: true
 
 server:
   port: 7001
