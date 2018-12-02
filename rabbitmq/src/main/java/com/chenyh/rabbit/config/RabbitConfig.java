@@ -30,6 +30,13 @@ public class RabbitConfig {
     }
 
     @Bean
+    public Queue collectLogQueue() {
+        Queue queue = new Queue("collectLog");
+
+        return new Queue("collectLog");
+    }
+
+    @Bean
     public Queue chickenQueue() {
         return new Queue("topicChicken");
     }

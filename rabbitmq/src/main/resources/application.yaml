@@ -9,5 +9,6 @@ spring:
     listener:
       simple:
         acknowledge-mode: MANUAL
+        prefetch: 10
     publisher-confirms: true
     publisher-returns: true
