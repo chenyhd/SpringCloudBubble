@@ -1,4 +1,4 @@
-package com.chenyh.provier.config;
+package com.chenyh.provider.config;
 
 import org.springframework.context.annotation.Configuration;
 

@@ -1,4 +1,4 @@
-package com.chenyh.provier.service;
+package com.chenyh.provider.service;
 
 import com.chenyh.entity.User;
 

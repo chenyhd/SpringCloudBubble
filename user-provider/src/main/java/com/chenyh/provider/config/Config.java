@@ -1,4 +1,4 @@
-package com.chenyh.provier.config;
+package com.chenyh.provider.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -13,4 +13,12 @@ public class Config {
     public Config() {
         System.out.println("Config 实例化");
     }
+
+
+//    @Bean
+//    SqlSessionTemplate sqlSessionTemplate(SqlSessionFactory sqlSessionFactory) {
+//        SqlSessionTemplate sessionTemplate = new SqlSessionTemplate(sqlSessionFactory, ExecutorType.BATCH);
+//        return sessionTemplate;
+//    }
+
 }

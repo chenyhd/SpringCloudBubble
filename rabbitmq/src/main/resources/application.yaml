@@ -8,7 +8,29 @@ spring:
     password: msg
     listener:
       simple:
-        acknowledge-mode: MANUAL
+#        acknowledge-mode: MANUAL
         prefetch: 10
     publisher-confirms: true
-    publisher-returns: true
+  datasource:
+    hikari:
+      connection-test-query: SELECT 1
+      minimum-idle: 1
+      maximum-pool-size: 5
+      pool-name: dbcp1
+    url: jdbc:mysql://chenyh.com:3306/rabbitmq
+    username: root
+    password: dbpasswrod
+    driver-class-name: com.mysql.jdbc.Driver
+#    publisher-returns: true
+
+
+mapper:
+  mappers:
+    - tk.mybatis.mapper.common.Mapper
+  notEmpty: false
+  wrap-keyword: "`{0}`"
+  identity: MYSQL
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true

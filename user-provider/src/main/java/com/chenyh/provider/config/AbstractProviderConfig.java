@@ -1,4 +1,4 @@
-package com.chenyh.provier.config;
+package com.chenyh.provider.config;
 
 
 import com.alibaba.druid.support.http.StatViewServlet;

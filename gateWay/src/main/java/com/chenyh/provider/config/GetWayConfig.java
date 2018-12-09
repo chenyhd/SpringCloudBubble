@@ -1,4 +1,4 @@
-package com.chenyh.provier.config;
+package com.chenyh.provider.config;
 
 import com.netflix.loadbalancer.IRule;
 import com.netflix.loadbalancer.RoundRobinRule;

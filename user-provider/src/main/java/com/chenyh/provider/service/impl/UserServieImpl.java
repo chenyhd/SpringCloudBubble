@@ -1,8 +1,8 @@
-package com.chenyh.provier.service.impl;
+package com.chenyh.provider.service.impl;
 
 import com.chenyh.entity.User;
-import com.chenyh.provier.mapper.UserMapper;
-import com.chenyh.provier.service.UserService;
+import com.chenyh.provider.mapper.UserMapper;
+import com.chenyh.provider.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

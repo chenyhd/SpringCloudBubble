@@ -1,9 +1,9 @@
-package com.chenyh.provier.controller;
+package com.chenyh.provider.controller;
 
 import com.chenyh.annotation.Intranet;
 import com.chenyh.entity.User;
 import com.chenyh.exception.IntranetException;
-import com.chenyh.provier.service.UserService;
+import com.chenyh.provider.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -5,6 +5,7 @@ import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.amqp.rabbit.support.CorrelationData;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import java.util.UUID;
@@ -39,7 +40,7 @@ public class MsgSender implements RabbitTemplate.ConfirmCallback, RabbitTemplate
     /**
      * 每5秒钟发送一个随机数字到队列
      */
-//    @Scheduled(cron = "0/1 * * * * ?")
+    @Scheduled(cron = "0/1 * * * * ?")
     public void sendLog() {
         try {
             for (int i = 0; i < 1000; i++) {

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chenyh.provider.mapper.UserMapper">
+
+
+    <insert id="insertMany">
+        insert into `user`(`name`,age,db_source)
+        values
+        <foreach collection="users" item="user" separator=",">
+
+            (#{user.name},#{user.age},#{user.dbSource})
+        </foreach>
+
+    </insert>
+</mapper>

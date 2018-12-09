@@ -41,11 +41,11 @@ public class MsgAckReceiver {
         System.out.println("收到消息内容1:"+new String(message.getBody()));
 
         // 确认消息已经消费成功
-        try {
-            channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);// 确认成功
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);// 确认成功
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
     }
 
 //    /**

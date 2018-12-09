@@ -1,4 +1,4 @@
-package com.chenyh.provier.config;
+package com.chenyh.provider.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.cloud.netflix.zuul.filters.route.ZuulFallbackProvider;

@@ -1,4 +1,4 @@
-package com.chenyh.provier.controller;
+package com.chenyh.provider.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
